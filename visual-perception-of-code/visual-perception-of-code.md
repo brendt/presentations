@@ -312,13 +312,13 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ---
 
-![inline](./structure-1.png)
+![inline](./curly-1.png)
 
 ^ With that, and cognitive load in mind; can anybody tell me what could be wrong with this piece of code?
 
 ---
 
-![inline](./structure-1b.png)
+![inline](./curly-2.png)
 
 ^ The argument list is the problem. There's a lot of important information there, pushed to the right.
 
@@ -328,7 +328,7 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ---
 
-![inline](./structure-2.png)
+![inline](./curly-3.png)
 
 ^ One solution could be structuring the argument list like this.
 
@@ -336,7 +336,7 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ---
 
-![inline](./structure-3.png)
+![inline](./curly-4.png)
 
 ^ For example making this constructor a static constructor instead.
 
@@ -344,7 +344,7 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ---
 
-![inline](./structure-4.png)
+![inline](./curly-5.png)
 
 ^ Another approach could be something like this, but now you're introducing several points of focus in your code.
 
@@ -352,7 +352,7 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ---
 
-![inline](./structure-4b.png)
+![inline](./curly-6.png)
 
 ^ There's the function start and end, the first and third argument align with the method body, and the second and fourth don't align to anything.
 
@@ -360,21 +360,45 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ---
 
-![inline](./structure-5.png)
+![inline](./curly-7.png)
 
 ^ Moving on to what seems like the only consistent, yet easy to understand way of structuring
 
 ---
 
-![inline](./structure-6.png)
+![inline](./curly-8.png)
 
 ---
 
-![inline](./structure-7.png)
+![inline](./curly-9.png)
 
 ---
 
-![inline](./structure-8.png)
+![inline](./curly-10.png)
+
+---
+
+## Self documenting code
+
+---
+
+![inline](./docblocks-1.png)
+
+---
+
+![inline](./docblocks-2.png)
+
+---
+
+![inline](./docblocks-3.png)
+
+---
+
+## Names
+
+---
+
+![inline](./names-1.png)
 
 ---
 
