@@ -50,30 +50,35 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ^ I'll also mention studies and facts today. Trying to prove to you that's it's more than just an opinion.
 
-^ I hope that, by reasoning together with you, we'll touch some topics you might not have really thought about before.
-
-^ The goal of this talk is not to convince you of my p.o.v
-
-^ But rather, make you think about how you and others percieve code, and form or finetune your opinion from there.
+^ I hope that, by reasoning together with you, we'll touch some topics you haven't given much thought yet and can be enlighting.
 
 ---
 
-## Professional developers who:
+## The problem
 
-^ Before diving into solutions and opinions, we must know the problem.
+^ Before diving into these topics, we have to take a look at the exact problem.
 
 ---
 
-## Professional developers who:
+## Read vs Write
 
-### Write code
-### Read code
+^ As professional developers, sure we're writing a lot of code; but we're actually reading and scanning much more.
 
-^ As professional developers, we're writing a lot of code; but we're also reading a lot, maybe even more.
+^ To name a few obvious examples: reading documentation, doing code reviews or finding your way in legacy codebases
 
-^ There are things like reading documentation, doing code reviews, learning legacy codebases, tutorials, reading our own code, a few days or weeks after we wrote it..
+^ But our own code also fits in this list. Ask yourself how many minutes a day your actually typing code, and compare that to the amount of time spent reading and figurng things out, trying to understand what's actually written.
 
-^ Think about it: the more easy it is to read and understand the code, the text, itself; the more "human memory space" is free to focus on other things.
+---
+
+## Reading and scanning:
+
+### Requires attention
+
+### Requires "human memory space"
+
+^ This reading and scanning requires a part of your attention, it puts a load on your brain. It's a thing you need to focus on.
+
+^ I like to put it like this: reading and scanning code requires a certain amount of human memory space to be used. And that memory can't be used for anything else.
 
 ---
 
@@ -83,19 +88,23 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 [^1]: *stitcher.io/cognitive-load*
 
-^ This so called "human memory space" is also called cognitive load.
+^ With an official term, this "human memory space" is also called "cognitive load".
 
 ^ A formal definition is that "cognitive load refers to the total amount of mental effort being used in the working memory of your brain"
 
-^ The more we can reduce this cognitive load, the more space available to focus, on for example, "application logic". The thing your clients actually pay you for.
+^ The more we can reduce this cognitive load, the more space there is available to focus, on for example, "application logic". The thing your clients actually pay you for.
 
-^ We'll be addressing this issue in two different ways, two so called area's that can be optimised.
+---
+
+## Visual perception of code
+
+^ There are many things we can do to reduce this cognitive load, to improve the visual perception of code.
 
 ---
 
 ## Aestetics
 
-^ First of all, we're going to look at the pure aestetics of your code.
+^ The first one: we're going to look at the pure aestetics of your code.
 
 ^ This is the easy part, because it has nothing do do with changing that code.
 
@@ -165,7 +174,7 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ## More space = ?
 
-^ What's the value of having more space available?
+^ What's the value of having more space?
 
 ---
 
@@ -197,7 +206,7 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ^ As you can see, more methods are visible on the screen, but their implementation is hidden.
 
-^ So, code folding has a few advantages:
+^ Code folding has a few advantages:
 
 ---
 
@@ -209,9 +218,9 @@ A lot of the things in this talk today are also written down there: stitcher.io
 ### Keep their implementation hidden, until needed
 ### Colour coded structure of classes
 
-^ You can keep the method signatures close by, but their implementation hidden until needed. So that's less things screaming for your attention.
+^ You can keep the method signatures close by, but their implementation hidden until needed. That's less things screaming for your attention.
 
-^ Another thing; you probably work with an IDE or editor which can list the "structure" of a classes, to quickly jump to. You can see that same structure very easy with folded methods, but with the added benefit of colour coding.
+^ Also; you probably work with an IDE or editor which can list the "structure" of a classes, to quickly jump to. You can see that same structure very easy with folded methods, but with the added benefit of colour coding.
 
 ^ If you're using code folding, there's one remark though:
 
@@ -239,7 +248,7 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ^ And that are colours.
 
-^ This could very well be one of the most sensitive things to suggest, but bear with me for a few minutes.
+^ This could very well be one of the more sensitive topics, but bear with me for a few minutes.
 
 ---
 
@@ -274,7 +283,7 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ![-](./aestetics-4.png)
 
-^ In this case for example, I'm using a color scheme create by Mozilla for their new dev tools. A lot a research went into picking these colours, to make them have very hight contrast. That doesn't mean that the brightness of your screen must always be a 100%. 
+^ In this case for example, I'm using a color scheme created by Mozilla for their new dev tools. A lot a research went into picking these colours, to make them have very hight contrast. That doesn't mean that the brightness of your screen must always be a 100%. 
 
 ^ Light themes are actually much more easy to read on a dimmed screen compared to dark ones. It's the brightness that hurts your eyes, not the contrast.
 
@@ -288,7 +297,7 @@ A lot of the things in this talk today are also written down there: stitcher.io
 ### Code folding
 ### Colours
 
-^ In this first part, we looked at things you can do yourself to make the code on your computer more readable. This was the easy part because no other people are affected by these changes.
+^ In this first part, we looked at things you can do to make the code on your screen more readable. This was the easy part because no other people are affected by these changes.
 
 ^ Next up, we'll talk about the structure of code.
 
@@ -297,8 +306,6 @@ A lot of the things in this talk today are also written down there: stitcher.io
 ## Structure
 
 ^ And that's the more difficult part, because changing things here, also affects other people.
-
-^ We'll look at how code can be written, from the structural point of view.
 
 ---
 
@@ -310,11 +317,13 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ^ The same can be applied to large pieces of code. You're not always reading every single letter; you're scanning for patterns.
 
+^ The easier it is to find patterns, the less time you spend looking around your code to find that one specific thing.
+
 ---
 
 ![inline](./curly-1.png)
 
-^ With that, and cognitive load in mind; can anybody tell me what could be wrong with this piece of code?
+^ With scanning, and cognitive load in mind; can anybody tell me what could be wrong with this piece of code?
 
 ---
 
@@ -330,9 +339,9 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ![inline](./curly-3.png)
 
-^ One solution could be structuring the argument list like this.
+^ One solution could be structuring the argument list like this, pulling the arguments more to the left.
 
-^ But then it doesn't really scale if you're refactoring.
+^ But this approach doesn't really scale when you're refactoring.
 
 ---
 
@@ -362,51 +371,119 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ![inline](./curly-7.png)
 
-^ Moving on to what seems like the only consistent, yet easy to understand way of structuring
+^ Moving on to what seems like the only consistent, yet easy to understand way of structuring the arguments.
+
+^ Some of you might already see the problem arising, but I want to make this really clear. So let's replace all code with Xs to see its structure.
 
 ---
 
 ![inline](./curly-8.png)
 
+^ Can you see how difficult it is to spot where the argument list ends, and where the method body starts?
+
+^ There's the curly bracket at the right indicating the end of the argument list, but the right side isn't where our focus is by default.
+
+^ So it turns out, there's one true place where to put that curly bracket:
+
 ---
 
 ![inline](./curly-9.png)
+
+^ On a new line.
+
+^ This visual boundary creates a pattern we can scan for.
 
 ---
 
 ![inline](./curly-10.png)
 
+^ This is the end result.
+
 ---
 
 ## Self documenting code
+
+^ Moving on to the last two points, I want to let the code do most of the talking.
+
+^ You probably already saw the docblocks above each method.
 
 ---
 
 ![inline](./docblocks-1.png)
 
----
+^ This function "puts a process into progress".
 
-![inline](./docblocks-2.png)
+^ Why is this docblock necessary? What extra information does it share we can't write in the code itself?
 
 ---
 
 ![inline](./docblocks-3.png)
 
+^ Nothing. That docblock has no added value at all. 
+
+^ This code should be type hinted instead of adding redudant doc blocks.
+
+^ Type hints are not enough though to fully remove doc blocks, to have this "self documented" code
+
 ---
 
-## Names
+## Naming
+
+^ You also have to name things correctly. A name is such a powerful tool in code, and can carry a lot of meaning and business context that you'd otherwise need docblocks for.
+
+^ Before making to last changes to our example code, let me quickly tell you a story.
+
+---
+
+### Go naming[^4]
+
+![inline](./names-go-1.png)
+
+[^4]: *https://speakerdeck.com/tpryan/go-for-php-developers*
+
+^ At PHPBenelux this year, Terrence Ryan gave a talk called "Go for PHP developers" and he showed us this example.
+
+^ He immediatly addressed a problem for the non-Go developers in the room: this code has very unclear names. So he changed it.
+
+---
+
+### Go naming[^4]
+
+![inline](./names-go-2.png)
+
+^ Afterwards I asked him why there was this naming convention in Go to make all variables as short as possible. He said "that's just the way the core team does it, and they enforce it during code reviews at Google". So naturally, those conventions were also used by the community.
+
+---
+
+### Variable Name Conventions in Go
+
+![inline](./names-go-3.png)
+
+^ Instead of choosing names which could be easily understood by humans, Go has this culture of making names as short as possible, without a good reason, besides "preference".
+
+---
+
+![inline](./docblocks-3.png)
+
+^ So what about our example? If a better name makes the code more clear by reading it, if it saves you a fraction of a second of brain time; and with cognitive load in mind; shouldn't we just use better names? Is an argument against it?
 
 ---
 
 ![inline](./names-1.png)
+
+^ I personally don't think so.
+
+^ For example, name the process variable actually `process` instead of `proc`; and let the method name actually say what it's going to do "put that process in progress"?
 
 ---
 
 ## Structure
 
 ### Curly brackets
-### DocBlocks and self-documenting code
-### Naming things
+### DocBlocks 
+### Names
+
+^ That were a lot of things in a short amount of time. Like I said at the start of this talk: my goal was to make you think about the cognitive load. I want encourage you to start looking for patterns, aestetics, good names, and so on, in your own code.
 
 ---
 
@@ -414,12 +491,16 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ### #cleancode - @brendt_gd
 
-^ I'd love to see how your code looks.
+^ Naturally, I'd love to see how your code looks.
 
-^ If you're up for it > screenshot and Twitter
+^ I always enjoy looking over someones shoulder to see how they have configured their IDE, and how they write code.
+
+^ If you're up for it, send me a screenshot of your code to me on Twitter!
 
 ---
 
 ### *stitcher.io/cognitive-load*
 ### *stitcher.io/key-binding*
 ### *stitcher.io/curly*
+
+^ With that being said, thanks for your attention!
