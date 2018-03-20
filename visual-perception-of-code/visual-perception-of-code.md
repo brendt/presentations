@@ -6,13 +6,15 @@
 
 ## Brent:
 
-### @brendt_gd
 ### web developer at spatie
+### @brendt_gd
 ### stitcher.io
 
-^ You can find me on Twitter
+^ My name is Brent
 
-^ webdev at spatie: Laravel websites and applications
+^ I'm a web developer at Spatie, I work on PHP and Laravel projects and do some open source.
+
+^ You can find me on Twitter
 
 ^ I have a blog on which I write about PHP and programming in general.
 A lot of the things in this talk today are also written down there: stitcher.io
@@ -50,7 +52,7 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ^ I'll also mention studies and facts today. Trying to prove to you that's it's more than just an opinion.
 
-^ I hope that, by reasoning together with you, we'll touch some topics you haven't given much thought yet and can be enlighting.
+^ I hope that, by reasoning together with you, we can touch some topics you haven't thought about before in this way, and can broaden your thinking.
 
 ---
 
@@ -62,11 +64,11 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ## Read vs Write
 
-^ As professional developers, sure we're writing a lot of code; but we're actually reading and scanning much more.
+^ As professional developers we're writing a lot of code; but we're actually reading and scanning much more.
 
 ^ To name a few obvious examples: reading documentation, doing code reviews or finding your way in legacy codebases
 
-^ But our own code also fits in this list. Ask yourself how many minutes a day your actually typing code, and compare that to the amount of time spent reading and figurng things out, trying to understand what's actually written.
+^ But our own code also fits in this list. Ask yourself how many minutes a day you're actually typing code, and compare that to the amount of time spent reading and figuring things out, trying to understand what's actually written.
 
 ---
 
@@ -88,11 +90,11 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 [^1]: *stitcher.io/cognitive-load*
 
-^ With an official term, this "human memory space" is also called "cognitive load".
+^ As an official term, this "human memory space" is also called cognitive load.
 
 ^ A formal definition is that "cognitive load refers to the total amount of mental effort being used in the working memory of your brain"
 
-^ The more we can reduce this cognitive load, the more space there is available to focus, on for example, "application logic". The thing your clients actually pay you for.
+^ The more we can reduce this cognitive load, the more space there is available to focus, on for example, "application logic". The thing your clients actually pay you to do.
 
 ---
 
@@ -104,7 +106,7 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ## Aestetics
 
-^ The first one: we're going to look at the pure aestetics of your code.
+^ At first: we're going to look at pure aestetic changes you can make on your screen.
 
 ^ This is the easy part, because it has nothing do do with changing that code.
 
@@ -118,9 +120,9 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ![-](./aestetics-1.png)
 
-^ This is the piece of code which we'll work from. It's a piece taken from a package I wrote at Spatie.
+^ During this talk, we'll mainly work with this piece of code. It's taken from a package I wrote at Spatie.
 
-^ Currently, the font configuration of this code:
+^ Currently, the font configuration of this code is the following
 
 ---
 
@@ -144,7 +146,7 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ![-](./aestetics-2.png)
 
-^ Now the text is much more readable, you don't have to squint your eyes as much as before. Easier to read text reduces cognitive load.
+^ Now the text is much more readable, you don't have to squint your eyes as much as before. Easier to read text reduces cognitive load. Because you don't have to focus as much on the reading itself.
 
 ^ We're freeing up memory space!
 
@@ -166,7 +168,7 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ![-](./aestetics-2.png)
 
-^ Some of you might be thinking that there's less code on the screen now, and that you don't like that.
+^ Some of you might be thinking that there's less code on the screen, and that you don't like that.
 
 ^ But let's think about that for a moment.
 
@@ -188,7 +190,7 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ## More things to see = more cognitive load
 
-^ Being able to see more code doesn't mean you're able to understand more at once.
+^ Being able to see more code doesn't mean you're able to understand more at once. It *increases* cognitive load
 
 ^ This brings us to the second visual change I personally use all the time.
 
@@ -234,13 +236,13 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ^ Key bindings are required.
 
-^ For this to really work, you need proper key bindings to collapse and unfold, but also to jump between methods and whitespace.
+^ For this to really work, you need proper key bindings to collapse and unfold, but also to jump between methods and whitespacing.
 
 ---
 
 ![-](./aestetics-3.png)
 
-^ This is the current example with better fonts and code folding. There's one more change I want to propose to reduce the cognitive load when reading this code.
+^ This is the current example with better fonts and code folding. There's one more change I want to propose to make this code easier to read.
 
 ---
 
@@ -273,7 +275,7 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 [^3]: *Etienne Grandjean: Ergonomic Aspects of Visual Display Terminals*
 
-^ Since the early rise of computers, people have been doing research on what colours are the easiest to work with on screens. For example, there's a guy called "Etienne Grandjean" who wrote a paper on this topic: Ergonomic Aspects of Visual Display Terminals
+^ Since the early rise of computers, people have been doing research on what colours are the easiest to work with on screens. For example, there's a guy called "Etienne Grandjean" who wrote a paper on this exact topic: Ergonomic Aspects of Visual Display Terminals
 
 ^ It turns out that dark text on a light background is easier to read than the opposite, because the dark parts automatically draw your subconscious attention.
 
@@ -286,6 +288,8 @@ A lot of the things in this talk today are also written down there: stitcher.io
 ^ In this case for example, I'm using a color scheme created by Mozilla for their new dev tools. A lot a research went into picking these colours, to make them have very hight contrast. That doesn't mean that the brightness of your screen must always be a 100%. 
 
 ^ Light themes are actually much more easy to read on a dimmed screen compared to dark ones. It's the brightness that hurts your eyes, not the contrast.
+
+^ I would really encourage you to just try it out for a week, I got used to a light theme in a few days, and since than never wanted to go back.
 
 ^ To recap:
 
@@ -317,7 +321,7 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ^ The same can be applied to large pieces of code. You're not always reading every single letter; you're scanning for patterns.
 
-^ The easier it is to find patterns, the less time you spend looking around your code to find that one specific thing.
+^ The easier it is to find these patterns, the less time you spend looking around your code to find that one specific thing.
 
 ---
 
@@ -357,13 +361,13 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ^ Another approach could be something like this, but now you're introducing several points of focus in your code.
 
-^ I can easily visualise this by drawing some lines.
+^ I can visualise this by drawing some lines.
 
 ---
 
 ![inline](./curly-6.png)
 
-^ There's the function start and end, the first and third argument align with the method body, and the second and fourth don't align to anything.
+^ There's the function start and end, the first and third argument aligning with the method body, and the second and fourth don't align to anything.
 
 ^ Another issue with this approach is that's there's no real guideline on how to group arguments. Per 2? 3? What about an uneven number of arguments?
 
@@ -401,6 +405,16 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ---
 
+## Visual Patterns
+
+^ When you start focussing on visual patterns in your code, you'll discover that you're already using some. This is one of the most important reasons there's a style guide provided by the FIG: PSR-2.
+
+^ But there probably also are some places still in your code where you don't activily look for them. And those are the places which take the longest time to search for specific things. So try to think about that the next time you're coding.
+
+^ Try to recognise places in your code that could be better structured, making it easier to scan for patterns in them. And also talk about this with your team to make it consistent.
+
+---
+
 ## Self documenting code
 
 ^ Moving on to the last two points, I want to let the code do most of the talking.
@@ -413,13 +427,13 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ^ This function "puts a process into progress".
 
-^ Why is this docblock necessary? What extra information does it share we can't write in the code itself?
+^ Why is this doc block necessary? What extra information does it share we can't write in the code itself?
 
 ---
 
 ![inline](./docblocks-3.png)
 
-^ Nothing. That docblock has no added value at all. 
+^ Nothing. It has no added value at all. 
 
 ^ This code should be type hinted instead of adding redudant doc blocks.
 
@@ -465,7 +479,7 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ![inline](./docblocks-3.png)
 
-^ So what about our example? If a better name makes the code more clear by reading it, if it saves you a fraction of a second of brain time; and with cognitive load in mind; shouldn't we just use better names? Is an argument against it?
+^ So what about our example? If a better name makes the code more clear by reading it, if it saves you a fraction of a second of brain time; and with cognitive load in mind; shouldn't we just use better names? Is there really an argument against it?
 
 ---
 
@@ -475,6 +489,8 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ^ For example, name the process variable actually `process` instead of `proc`; and let the method name actually say what it's going to do "put that process in progress"?
 
+^ When you give a variable or a method a name, it always seems obvious to you at the moment. But does it still after a day? A week? Do you need doc blocks to explain what the code does? Or is it clear by its name?
+
 ---
 
 ## Structure
@@ -483,7 +499,7 @@ A lot of the things in this talk today are also written down there: stitcher.io
 ### DocBlocks 
 ### Names
 
-^ That were a lot of things in a short amount of time. Like I said at the start of this talk: my goal was to make you think about the cognitive load. I want encourage you to start looking for patterns, aestetics, good names, and so on, in your own code.
+^ That were a lot of things in a short amount of time. Like I said at the start of this talk: my goal was to make you think about this cognitive load. I want encourage you to start looking for patterns, aestetics, good names, and so on, in your own code.
 
 ---
 
@@ -495,7 +511,7 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ^ I always enjoy looking over someones shoulder to see how they have configured their IDE, and how they write code.
 
-^ If you're up for it, send me a screenshot of your code to me on Twitter!
+^ If you're up for it, send me a screenshot of your code on Twitter!
 
 ---
 
