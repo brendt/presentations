@@ -1,6 +1,8 @@
+---
+
 # Visual perception of code
 
-^ Before we start, there are a few informational things I'd like to share.
+^ Before we start, just a quick introduction about me.
 
 ---
 
@@ -16,8 +18,8 @@
 
 ^ You can find me on Twitter
 
-^ I have a blog on which I write about PHP and programming in general.
-A lot of the things in this talk today are also written down there: stitcher.io
+^ I have a blog called stitcher.io on which I write about PHP and programming in general.
+A lot of the things I'll talk about today are also written down there.
 
 ---
 
@@ -52,7 +54,7 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ^ I'll also mention studies and facts today. Trying to prove to you that's it's more than just an opinion.
 
-^ I hope that, by reasoning together with you, we can touch some topics you haven't thought about before in this way, and can broaden your thinking.
+^ I hope that, by reasoning together, we can touch some topics you haven't thought about before in this way, and can broaden your thinking.
 
 ---
 
@@ -64,7 +66,7 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ## Read vs Write
 
-^ As professional developers we're writing a lot of code; but we're actually reading and scanning much more.
+^ As professional programmers we're writing a lot of code; but we're actually reading and scanning much more.
 
 ^ To name a few obvious examples: reading documentation, doing code reviews or finding your way in legacy codebases
 
@@ -80,7 +82,7 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ^ This reading and scanning requires a part of your attention, it puts a load on your brain. It's a thing you need to focus on.
 
-^ I like to put it like this: reading and scanning code requires a certain amount of human memory space to be used. And that memory can't be used for anything else.
+^ I like to put it like this: reading and scanning code requires a certain amount of human memory space. And that memory can't be used for anything else.
 
 ---
 
@@ -94,7 +96,7 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ^ A formal definition is that "cognitive load refers to the total amount of mental effort being used in the working memory of your brain"
 
-^ The more we can reduce this cognitive load, the more space there is available to focus, on for example, "application logic". The thing your clients actually pay you to do.
+^ The more we can reduce this cognitive load, the more space there is to focus, on for example, "application logic". The thing your clients actually pay you to do.
 
 ---
 
@@ -106,9 +108,9 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ## Aestetics
 
-^ At first: we're going to look at pure aestetic changes you can make on your screen.
+^ At first: we're going to look at pure aestetics; these are changes you can make on your screen.
 
-^ This is the easy part, because it has nothing do do with changing that code.
+^ This is the easy part, because it has nothing do do with changing the code itself.
 
 ---
 
@@ -122,7 +124,7 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ^ During this talk, we'll mainly work with this piece of code. It's taken from a package I wrote at Spatie.
 
-^ Currently, the font configuration of this code is the following
+^ Currently, the font configuration in this example is the following
 
 ---
 
@@ -164,6 +166,8 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ^ But of course, you're free to work out what's best for you.
 
+^ But notice especially how much larger the font size and line height are.
+
 ---
 
 ![-](./aestetics-2.png)
@@ -190,7 +194,7 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ## More things to see = more cognitive load
 
-^ Being able to see more code doesn't mean you're able to understand more at once. It *increases* cognitive load
+^ Being able to **see** too much code means it **increases** cognitive load
 
 ^ This brings us to the second visual change I personally use all the time.
 
@@ -279,7 +283,7 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ^ It turns out that dark text on a light background is easier to read than the opposite, because the dark parts automatically draw your subconscious attention.
 
-^ Many people also tell me that a light colour scheme hurts their eyes. It's important to note that the brightness of your screen isn't the same as the contrast of the text.
+^ Many people tell me that a light colour scheme hurts their eyes. It's important to note that the brightness of your screen isn't the same as the contrast of the text.
 
 ---
 
@@ -290,6 +294,8 @@ A lot of the things in this talk today are also written down there: stitcher.io
 ^ Light themes are actually much more easy to read on a dimmed screen compared to dark ones. It's the brightness that hurts your eyes, not the contrast.
 
 ^ I would really encourage you to just try it out for a week, I got used to a light theme in a few days, and since than never wanted to go back.
+
+^ It's of course a little personal, I understand that; but remember: easier to read text, reduced cognitive load.
 
 ^ To recap:
 
@@ -309,7 +315,7 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ## Structure
 
-^ And that's the more difficult part, because changing things here, also affects other people.
+^ As you can imagine, this the more difficult part, because now we're messing with things others are also affected by.
 
 ---
 
@@ -317,7 +323,7 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ^ Let's talk about curly brackets first.
 
-^ As web developers, you're probably aware that people don't read websites, they rather scan it. And that scanning happens from left to right.
+^ As web developers, you're probably aware that people don't read websites, they rather scan it. And that scanning usually happens from left to right, top to bottom.
 
 ^ The same can be applied to large pieces of code. You're not always reading every single letter; you're scanning for patterns.
 
@@ -353,7 +359,7 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ^ For example making this constructor a static constructor instead.
 
-^ You can see the alignment breaks.
+^ You can see the alignment breaking.
 
 ---
 
@@ -407,9 +413,9 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ## Visual Patterns
 
-^ When you start focussing on visual patterns in your code, you'll discover that you're already using some. This is one of the most important reasons there's a style guide provided by the FIG: PSR-2.
+^ When you start focussing on visual patterns in your code, you'll discover that you're already using some. This is one of the most important reasons there's a style guide provided by the FIG: PSR-2 (PSR-12 is coming). 
 
-^ But there probably also are some places still in your code where you don't activily look for them. And those are the places which take the longest time to search for specific things. So try to think about that the next time you're coding.
+^ But there probably also are some places still in your code where you don't activily look for patterns. And those are the places which take the longest time to search for specific things. So try to think about that the next time you're coding.
 
 ^ Try to recognise places in your code that could be better structured, making it easier to scan for patterns in them. And also talk about this with your team to make it consistent.
 
@@ -417,9 +423,9 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ## Self documenting code
 
-^ Moving on to the last two points, I want to let the code do most of the talking.
+^ Moving on to the last two points, I want to let the code do most of the talking, so to speak.
 
-^ You probably already saw the docblocks above each method.
+^ You probably already saw the docblocks for each method in the examples.
 
 ---
 
@@ -427,7 +433,7 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ^ This function "puts a process into progress".
 
-^ Why is this doc block necessary? What extra information does it share we can't write in the code itself?
+^ You should ask yourself: is this doc block necessary? What information does it share we can't write in the code itself?
 
 ---
 
@@ -437,15 +443,15 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ^ This code should be type hinted instead of adding redudant doc blocks.
 
-^ Type hints are not enough though to fully remove doc blocks, to have this "self documented" code
+^ Type hints aren't enough to fully remove doc blocks, to have this "self documented" code
 
 ---
 
 ## Naming
 
-^ You also have to name things correctly. A name is such a powerful tool in code, and can carry a lot of meaning and business context that you'd otherwise need docblocks for.
+^ You also have to name things correctly. A name is such a powerful tool, it can carry a lot of meaning and business context that you'd otherwise need documentation for.
 
-^ Before making to last changes to our example code, let me quickly tell you a story.
+^ Before making the last changes to our example code, let me quickly tell you a story.
 
 ---
 
@@ -457,7 +463,7 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ^ At PHPBenelux this year, Terrence Ryan gave a talk called "Go for PHP developers" and he showed us this example.
 
-^ He immediatly addressed a problem for the non-Go developers in the room: this code has very unclear names. So he changed it.
+^ He immediatly addressed a problem for the non-Go developers in the room: this code had very unclear names. So he changed it.
 
 ---
 
@@ -477,19 +483,57 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ---
 
-![inline](./docblocks-3.png)
+![inline](./names-1.png)
 
-^ So what about our example? If a better name makes the code more clear by reading it, if it saves you a fraction of a second of brain time; and with cognitive load in mind; shouldn't we just use better names? Is there really an argument against it?
+^ So what about our example? If a better name makes the code more readable, if it saves you a fraction of a second of brain time; and with cognitive load in mind; shouldn't we just use better names? Is there really an argument against it?
 
 ---
 
-![inline](./names-1.png)
+![inline](./names-2.png)
 
 ^ I personally don't think so.
 
 ^ For example, name the process variable actually `process` instead of `proc`; and let the method name actually say what it's going to do "put that process in progress"?
 
-^ When you give a variable or a method a name, it always seems obvious to you at the moment. But does it still after a day? A week? Do you need doc blocks to explain what the code does? Or is it clear by its name?
+^ Be smart and skip the mental translation from abstract to concrete names. It's a burden every time you read your code.
+
+^ When you name something, it always seems obvious to you at that moment. But does it still after a day? A week? Do you need doc blocks to explain what the code does? Or is it clear by its name? Not only to you, but also the ones who have to work in your legacy codebase once you're done?
+
+---
+
+## `UserCreated`
+
+### Event, Mail, Notification?
+
+^ Two more examples. Does this class mean a user was created, an event; or does it represent the mail that's sent out when that event happens, or maybe it's the name of a notification?
+
+---
+
+## `UserCreatedEvent` 
+
+## `UserCreatedMail`
+
+## `UserCreatedNotification`
+
+^ Let's just skip the possibility for confusion alltogether, and use explicit names.
+
+---
+
+## `CreateUser`
+
+### Command or HTTP request
+
+^ The last one: is this a command to create a user; 
+
+^ or is it a request class containing the validation rules?
+
+---
+
+## `CreateUserCommand` 
+
+## `CreateUserRequest`
+
+^ Again, let's not waste time thinking about this, spend your brain power on more important stuff.
 
 ---
 
@@ -499,7 +543,11 @@ A lot of the things in this talk today are also written down there: stitcher.io
 ### DocBlocks 
 ### Names
 
-^ That were a lot of things in a short amount of time. Like I said at the start of this talk: my goal was to make you think about this cognitive load. I want encourage you to start looking for patterns, aestetics, good names, and so on, in your own code.
+^ That were a lot of things in a short amount of time. 
+
+^ Like I said at the start of this talk: my goal was to make you think about cognitive load. 
+
+^ I want to encourage you to start looking for patterns, aestetics, good names, and so on, in your own code.
 
 ---
 
@@ -507,7 +555,7 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ### #cleancode - @brendt_gd
 
-^ Naturally, I'd love to see how your code looks.
+^ Naturally, I'd love to see how that code looks.
 
 ^ I always enjoy looking over someones shoulder to see how they have configured their IDE, and how they write code.
 
@@ -515,8 +563,14 @@ A lot of the things in this talk today are also written down there: stitcher.io
 
 ---
 
+## Thanks!
+
+### @brendt_gd
 ### *stitcher.io/cognitive-load*
 ### *stitcher.io/key-binding*
 ### *stitcher.io/curly*
 
+
 ^ With that being said, thanks for your attention!
+
+---
