@@ -566,10 +566,7 @@ A lot of the things I'll talk about today are also written down there.
 ## Thanks!
 
 ### @brendt_gd
-### *stitcher.io/cognitive-load*
-### *stitcher.io/key-binding*
-### *stitcher.io/curly*
-
+### *stitcher.io/presentations*
 
 ^ With that being said, thanks for your attention!
 
