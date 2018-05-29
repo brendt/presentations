@@ -66,7 +66,7 @@ A lot of the things I'll talk about today are also written down there.
 
 ## Read vs Write
 
-^ As professional programmers we're writing a lot of code; but we're actually reading and scanning much more.
+^ As professional programmers we're writing a lot of code; but we're reading and scanning even more.
 
 ^ To name a few obvious examples: reading documentation, doing code reviews or finding your way in legacy codebases
 
@@ -188,7 +188,7 @@ A lot of the things I'll talk about today are also written down there.
 
 ^ You could say there's more things to see.
 
-^ But in reality, being able to **see** more code on your screen, has nothing to do with being able to understand what's on that screen any faster or better. It's actually more difficult to know where to focus, because there's much more points to focus on.
+^ But in reality, being able to **see** more code on your screen, doesn't mean you're able to understand what's on that screen any faster or better. It's actually more difficult to know where to focus, because there's much more points to focus on.
 
 ---
 
@@ -220,13 +220,13 @@ A lot of the things I'll talk about today are also written down there.
 
 ## Code folding
 
-### Keep the method signatures close by
-### Keep their implementation hidden, until needed
+### Method signatures close by
+### Implementation hidden
 ### Colour coded structure of classes
 
 ^ You can keep the method signatures close by, but their implementation hidden until needed. That's less things screaming for your attention.
 
-^ Also; you probably work with an IDE or editor which can list the "structure" of a classes, to quickly jump to. You can see that same structure very easy with folded methods, but with the added benefit of colour coding.
+^ Also; you probably work with an IDE or editor which can list the "structure" of classes, to quickly jump to. You can see that same structure very easy with folded methods, but with the added benefit of colour coding. So it's easier to navigate.
 
 ^ If you're using code folding, there's one remark though:
 
@@ -407,7 +407,15 @@ A lot of the things I'll talk about today are also written down there.
 
 ![inline](./curly-10.png)
 
-^ This is the end result.
+^ This is the end result. 
+
+---
+
+![center](./curly-10.png)
+
+## Kevlin Henney
+
+^ And by the way, this example isn't my own; it's made by a guy called Kevlin Henney, he's a programmer and a writer and has a very good eye for these kind of visual patterns. So if you want to know more, definitely check him out.
 
 ---
 
@@ -415,7 +423,7 @@ A lot of the things I'll talk about today are also written down there.
 
 ^ When you start focussing on visual patterns in your code, you'll discover that you're already using some. This is one of the most important reasons there's a style guide provided by the FIG: PSR-2 (PSR-12 is coming). 
 
-^ But there probably also are some places still in your code where you don't activily look for patterns. And those are the places which take the longest time to search for specific things. So try to think about that the next time you're coding.
+^ But, most likely, there still are some places in your code where you don't activily look for patterns. And those are the places which take the longest time to search for specific things. So try to think about that the next time you're coding.
 
 ^ Try to recognise places in your code that could be better structured, making it easier to scan for patterns in them. And also talk about this with your team to make it consistent.
 
@@ -503,9 +511,13 @@ A lot of the things I'll talk about today are also written down there.
 
 ## `UserCreated`
 
-### Event, Mail, Notification?
+### Event, Mail or Notification?
 
-^ Two more examples. Does this class mean a user was created, an event; or does it represent the mail that's sent out when that event happens, or maybe it's the name of a notification?
+^ Two more examples. Does this class mean a user was created, an event; 
+
+^ or does it represent the mail that's sent out when that event happens, 
+
+^ or maybe it's the name of a notification?
 
 ---
 
@@ -521,17 +533,21 @@ A lot of the things I'll talk about today are also written down there.
 
 ## `CreateUser`
 
-### Command or HTTP request
+### Command, HTTP request or Job?
 
 ^ The last one: is this a command to create a user; 
 
-^ or is it a request class containing the validation rules?
+^ Is it a request class containing the validation rules?
+
+^ or is it a job to create a user?
 
 ---
 
 ## `CreateUserCommand` 
 
 ## `CreateUserRequest`
+
+## `CreateUserJob`
 
 ^ Again, let's not waste time thinking about this, spend your brain power on more important stuff.
 
@@ -569,5 +585,7 @@ A lot of the things I'll talk about today are also written down there.
 ### *stitcher.io/presentations*
 
 ^ With that being said, thanks for your attention!
+
+^ If there are any questions or if you want to tell me I'm wrong: feel free to come talk with me, after my colleague Sebestian is done.
 
 ---
