@@ -106,9 +106,9 @@ A lot of the things I'll talk about today are also written down there.
 
 ---
 
-## Aestetics
+## Aesthetics
 
-^ At first: we're going to look at pure aestetics; these are changes you can make on your screen.
+^ At first: we're going to look at pure aesthetics; these are changes you can make on your screen.
 
 ^ This is the easy part, because it has nothing do do with changing the code itself.
 
@@ -301,7 +301,7 @@ A lot of the things I'll talk about today are also written down there.
 
 ---
 
-## Aestetics
+## Aesthetics
 
 ### Fonts and spacing
 ### Code folding
@@ -563,7 +563,7 @@ A lot of the things I'll talk about today are also written down there.
 
 ^ Like I said at the start of this talk: my goal was to make you think about cognitive load. 
 
-^ I want to encourage you to start looking for patterns, aestetics, good names, and so on, in your own code.
+^ I want to encourage you to start looking for patterns, aesthetics, good names, and so on, in your own code.
 
 ---
 
