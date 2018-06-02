@@ -8,7 +8,7 @@
 
 ## Brent:
 
-### web developer at spatie
+### Web developer at Spatie.
 ### @brendt_gd
 ### stitcher.io
 
@@ -31,8 +31,6 @@ A lot of the things I'll talk about today are also written down there.
 
 ---
 
-## Visual perception of code:
-
 ### Opinionated and personal
 ### Controversial
 ### Out of your comfort zone
@@ -47,8 +45,6 @@ A lot of the things I'll talk about today are also written down there.
 
 ---
 
-## Visual perception of code:
-
 ### Studies and facts
 ### Common sense and reasoning
 
@@ -58,13 +54,13 @@ A lot of the things I'll talk about today are also written down there.
 
 ---
 
-## The problem
+## The problem:
 
 ^ Before diving into these topics, we have to take a look at the exact problem.
 
 ---
 
-## Read vs Write
+## Reading vs. writing
 
 ^ As professional programmers we're writing a lot of code; but we're reading and scanning even more.
 
@@ -74,11 +70,11 @@ A lot of the things I'll talk about today are also written down there.
 
 ---
 
-## Reading and scanning:
+## Reading requires
 
-### Requires attention
+### Attention
 
-### Requires "human memory space"
+### "human memory space"
 
 ^ This reading and scanning requires a part of your attention, it puts a load on your brain. It's a thing you need to focus on.
 
@@ -86,9 +82,7 @@ A lot of the things I'll talk about today are also written down there.
 
 ---
 
-## "Human memory space"
-
-### **Cognitive load**[^1]
+## "Human memory space" = Cognitive load [^1]
 
 [^1]: *stitcher.io/cognitive-load*
 
@@ -100,7 +94,7 @@ A lot of the things I'll talk about today are also written down there.
 
 ---
 
-## Visual perception of code
+## Improve your code:
 
 ^ There are many things we can do to reduce this cognitive load, to improve the visual perception of code.
 
@@ -132,9 +126,9 @@ A lot of the things I'll talk about today are also written down there.
 
 ## Fonts
 
-### Courier New 
-### 14pt
-### Line height of 1.1em
+### font-family: "Courier New";
+### font-size: 14px;
+### line-height: 16px;
 
 ^ Let's review it once more.
 
@@ -160,9 +154,9 @@ A lot of the things I'll talk about today are also written down there.
 
 ## Fonts
 
-### Ubuntu Mono
-### 18pt
-### Line height of 1.8em
+### font-family: "Ubuntu Mono";
+### font-size: 21px;
+### line-height: 38px;
 
 ^ But of course, you're free to work out what's best for you.
 
@@ -216,10 +210,6 @@ A lot of the things I'll talk about today are also written down there.
 
 ---
 
-![-](./aestetics-3.png)
-
-## Code folding
-
 ### Method signatures close by
 ### Implementation hidden
 ### Colour coded structure of classes
@@ -232,9 +222,7 @@ A lot of the things I'll talk about today are also written down there.
 
 ---
 
-![-](./aestetics-3.png)
-
-## Code folding requires key bindings[^2]
+## Code folding requires key bindings [^2]
 
 [^2]: *stitcher.io/key-binding*
 
@@ -269,8 +257,6 @@ A lot of the things I'll talk about today are also written down there.
 ^ This, a light theme
 
 ---
-
-![-](./aestetics-4.png)
 
 ## Colours
 
@@ -463,7 +449,7 @@ A lot of the things I'll talk about today are also written down there.
 
 ---
 
-## Go naming[^4]
+## Go naming [^4]
 
 
 [^4]: *https://speakerdeck.com/tpryan/go-for-php-developers*

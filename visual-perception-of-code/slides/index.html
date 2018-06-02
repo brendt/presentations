@@ -264,7 +264,7 @@ public function inProgress($proc)
 }
 </code></pre>
 
-<pre class="slide" id="16"><code class="php">public function inProgress(<span class="type">Process</span> $proc): <span class="type">void</span>
+<pre class="slide" id="16"><code class="php">public function inProgress(<span class="type">ParallelProcess</span> $proc): <span class="type">void</span>
 {
     $proc-><span class="function">getProcess</span>()-><span class="function">setTimeout</span>($this-><span class="property">timeout</span>);
 
@@ -276,10 +276,10 @@ public function inProgress($proc)
 }
 </code></pre>
 
-<pre class="slide" id="17"><code class="php">public function inProgress(<span class="type">Process</span> $proc): <span class="type">void</span>
+<pre class="slide" id="17"><code class="php">public function inProgress(<span class="type">ParallelProcess</span> $proc): <span class="type">void</span>
 </code></pre>
 
-<pre class="slide" id="18"><code class="php">public function putInProgress(<span class="type">Process</span> $process): <span class="type">void</span>
+<pre class="slide" id="18"><code class="php">public function putInProgress(<span class="type">ParallelProcess</span> $process): <span class="type">void</span>
 </code></pre>
 
 <pre class="slide" id="19"><code class="go"><span class="type">r</span>, <span class="type">ok</span> := <span class="type">g</span>[*<span class="type">l</span>]
