@@ -1,0 +1,313 @@
+<html>
+<head>
+    <title>Slides</title>
+    <link rel="stylesheet" href="/theme_light.css">
+    <link rel="stylesheet" href="/theme_dark.css">
+    <link rel="stylesheet" href="/slides.css">
+    <script src="/hljs.min.js"></script>
+</head>
+<body>
+
+<pre class="slide dark bad-font" id="1"><code class="php">/**
+ * Add a process to the queue
+ *
+ * @param \Spatie\Async\ParallelProcess|callable $process
+ *
+ * @return \Spatie\Async\ParallelProcess
+ */
+public function add($proc) {
+    if (!$proc instanceof ParallelProcess) {
+        $proc = ParentRuntime::createChildProcess($proc);
+    }
+
+    $this->queue($proc);
+
+    return $proc;
+}
+
+/**
+ * Wait for all processes to finish
+ *
+ * @return array
+ */
+public function wait() {
+    while ($this->inProgress) {
+        foreach ($this->inProgress as $process) {
+            if ($process->getCurrentExecutionTime() > $this->timeout) {
+                $this->markAsTimedOut($process);
+            }
+        }
+
+        if (!$this->inProgress) {
+            break;
+        }
+
+        usleep($this->sleepTime);
+    }
+
+    return $this->results;
+}
+
+/**
+ * Put a process in the queue
+ *
+ * @param \Spatie\Async\ParallelProcess $proc
+ */
+public function queue($proc)
+{
+    $this->queue[$proc->getId()] = $proc;
+
+    $this->notify();
+}
+</code></pre>
+
+<pre class="slide dark" id="2"><code class="php">/**
+ * Add a process to the queue
+ *
+ * @param \Spatie\Async\ParallelProcess|callable $process
+ *
+ * @return \Spatie\Async\ParallelProcess
+ */
+public function add($proc) {
+    if (!$proc instanceof ParallelProcess) {
+        $proc = ParentRuntime::createChildProcess($proc);
+    }
+
+    $this->queue($proc);
+
+    return $proc;
+}
+
+/**
+ * Wait for all processes to finish
+ *
+ * @return array
+ */
+public function wait() {
+    while ($this->inProgress) {
+        foreach ($this->inProgress as $process) {
+            if ($process->getCurrentExecutionTime() > $this->timeout) {
+                $this->markAsTimedOut($process);
+            }
+        }
+
+        if (!$this->inProgress) {
+            break;
+        }
+
+        usleep($this->sleepTime);
+    }
+
+    return $this->results;
+}
+
+/**
+ * Put a process in the queue
+ *
+ * @param \Spatie\Async\ParallelProcess $proc
+ */
+public function queue($proc)
+{
+    $this->queue[$proc->getId()] = $proc;
+
+    $this->notify();
+}
+</code></pre>
+
+<pre class="slide dark" id="3"><code class="php">/** Add a process to the queue ... */
+public function add($proc) {
+    if (!$proc instanceof ParallelProcess) {
+        $proc = ParentRuntime::createChildProcess($proc);
+    }
+
+    $this->queue($proc);
+
+    return $proc;
+}
+
+/** Wait for all processes to finish ... */
+public function wait() { ... }
+
+/** Put a process in the queue ... */
+public function queue($proc) { ... }
+</code></pre>
+
+<pre class="slide" id="4"><code class="php">/** Add a process to the queue ... */
+public function add($proc) {
+    if (!$proc instanceof <span class="type">ParallelProcess</span>) {
+        $proc = <span class="type">ParentRuntime</span>::<span class="method">createChildProcess</span>($proc);
+    }
+
+    $this->queue($proc);
+
+    return $proc;
+}
+
+/** Wait for all processes to finish ... */
+public function wait() { ... }
+
+/** Put a process in the queue ... */
+public function queue($proc) { ... }
+</code></pre>
+
+<pre class="slide" id="5"><code class="php">public function __construct(<span class="type">string</span> $publicDirectory, <span class="type">string</span> $configurationFile, <span class="type">PageParser</span> $pageParser, <span class="type">PageRenderer</span> $pageRenderer) {
+    $this-><span class="property">publicDirectory</span> = <span class="function">rtrim</span>($publicDirectory, '/');
+    $this-><span class="property">configurationFile</span> = $configurationFile;
+    $this-><span class="property">pageParser</span> = $pageParser;
+    $this-><span class="property">pageRenderer</span> = $pageRenderer;
+}
+</code></pre>
+
+<pre class="slide" id="6"><code class="php">public function __construct(<span class="type">string</span> $publicDirectory, <span class="type">string</span> $configurationFile, <span class="type">PageParser</span> $pageParser, <span class="type">PageRenderer</span> $pageRenderer) {
+</code></pre>
+
+<pre class="slide" id="7"><code class="php">public function __construct(<span class="type">string</span> $publicDirectory,
+                            <span class="type">string</span> $configurationFile,
+                            <span class="type">PageParser</span> $pageParser,
+                            <span class="type">PageRenderer</span> $pageRenderer) {
+</code></pre>
+
+<pre class="slide" id="8"><code class="php">public static function create(<span class="type">string</span> $publicDirectory,
+                            <span class="type">string</span> $configurationFile,
+                            <span class="type">PageParser</span> $pageParser,
+                            <span class="type">PageRenderer</span> $pageRenderer) {
+</code></pre>
+
+
+<pre class="slide" id="9"><code class="php">public function __construct(
+    <span class="type">string</span> $publicDirectory, <span class="type">string</span> $configurationFile,
+    <span class="type">PageParser</span> $pageParser, <span class="type">PageRenderer</span> $pageRenderer) {
+    $this-><span class="property">publicDirectory</span> = <span class="function">rtrim</span>($publicDirectory, '/');
+    $this-><span class="property">configurationFile</span> = $configurationFile;
+    $this-><span class="property">pageParser</span> = $pageParser;
+    $this-><span class="property">pageRenderer</span> = $pageRenderer;
+}
+</code></pre>
+
+
+<pre class="slide" id="10">
+<code class="php">public function __construct(
+    <span class="type">string</span> $publicDirectory, <span class="type">string</span> $configurationFile,
+    <span class="type">PageParser</span> $pageParser, <span class="type">PageRenderer</span> $pageRenderer) {
+    $this-><span class="property">publicDirectory</span> = <span class="function">rtrim</span>($publicDirectory, '/');
+    $this-><span class="property">configurationFile</span> = $configurationFile;
+    $this-><span class="property">pageParser</span> = $pageParser;
+    $this-><span class="property">pageRenderer</span> = $pageRenderer;
+}<span class="line1 line"></span><span class="line2 line"></span><span class="line3 line"></span><span class="line4 line"></span>
+</code></pre>
+
+<pre class="slide" id="11"><code class="php">public function __construct(
+    <span class="type">string</span> $publicDirectory,
+    <span class="type">string</span> $configurationFile,
+    <span class="type">PageParser</span> $pageParser,
+    <span class="type">PageRenderer</span> $pageRenderer) {
+    $this-><span class="property">publicDirectory</span> = <span class="function">rtrim</span>($publicDirectory, '/');
+    $this-><span class="property">configurationFile</span> = $configurationFile;
+    $this-><span class="property">pageParser</span> = $pageParser;
+    $this-><span class="property">pageRenderer</span> = $pageRenderer;
+}
+</code></pre>
+
+<pre class="slide" id="12"><code class="">XXXXXX XXXXXXXX __XXXXXXXXX(
+    XXXXXX $XXXXXXXXXXXXXXX,
+    XXXXXX $XXXXXXXXXXXXXXXXX,
+    XXXXXXXXXX $XXXXXXXXXX,
+    XXXXXXXXXXXX $XXXXXXXXXXXX) {
+    $XXXX->XXXXXXXXXXXXXXX = XXXXX($XXXXXXXXXXXXXXX, XXX);
+    $XXXX->XXXXXXXXXXXXXXXXX = $XXXXXXXXXXXXXXXXX;
+    $XXXX->XXXXXXXXXX = $XXXXXXXXXX;
+    $XXXX->XXXXXXXXXXX = $XXXXXXXXXXXXX;
+}
+</code></pre>
+
+<pre class="slide" id="13"><code class="">XXXXXX XXXXXXXX __XXXXXXXXX(
+    XXXXXX $XXXXXXXXXXXXXXX,
+    XXXXXX $XXXXXXXXXXXXXXXXX,
+    XXXXXXXXXX $XXXXXXXXXX,
+    XXXXXXXXXXXX $XXXXXXXXXXXX
+) {
+    $XXXX->XXXXXXXXXXXXXXX = XXXXX($XXXXXXXXXXXXXXX, XXX);
+    $XXXX->XXXXXXXXXXXXXXXXX = $XXXXXXXXXXXXXXXXX;
+    $XXXX->XXXXXXXXXX = $XXXXXXXXXX;
+    $XXXX->XXXXXXXXXXX = $XXXXXXXXXXXXX;
+}
+</code></pre>
+
+
+<pre class="slide" id="14"><code class="php">public function __construct(
+    <span class="type">string</span> $publicDirectory,
+    <span class="type">string</span> $configurationFile,
+    <span class="type">PageParser</span> $pageParser,
+    <span class="type">PageRenderer</span> $pageRenderer
+) {
+    $this-><span class="property">publicDirectory</span> = <span class="function">rtrim</span>($publicDirectory, '/');
+    $this-><span class="property">configurationFile</span> = $configurationFile;
+    $this-><span class="property">pageParser</span> = $pageParser;
+    $this-><span class="property">pageRenderer</span> = $pageRenderer;
+}
+</code></pre>
+
+<pre class="slide" id="15"><code class="php">/**
+ * Put a process in progress
+ *
+ * @param \Spatie\Async\ParallelProcess $proc
+ */
+public function inProgress($proc)
+{
+    $proc-><span class="function">getProcess</span>()-><span class="function">setTimeout</span>($this-><span class="property">timeout</span>);
+
+    $proc-><span class="function">start</span>();
+
+    unset($this-><span class="function">queue</span>[$proc-><span class="function">getId</span>()]);
+
+    $this-><span class="function">inProgress</span>[$proc-><span class="function">getPid</span>()] = $proc;
+}
+</code></pre>
+
+<pre class="slide" id="16"><code class="php">public function inProgress(<span class="type">Process</span> $proc): <span class="type">void</span>
+{
+    $proc-><span class="function">getProcess</span>()-><span class="function">setTimeout</span>($this-><span class="property">timeout</span>);
+
+    $proc-><span class="function">start</span>();
+
+    unset($this-><span class="function">queue</span>[$proc-><span class="function">getId</span>()]);
+
+    $this-><span class="function">inProgress</span>[$proc-><span class="function">getPid</span>()] = $proc;
+}
+</code></pre>
+
+<pre class="slide" id="17"><code class="php">public function inProgress(<span class="type">Process</span> $proc): <span class="type">void</span>
+</code></pre>
+
+<pre class="slide" id="18"><code class="php">public function putInProgress(<span class="type">Process</span> $process): <span class="type">void</span>
+</code></pre>
+
+<pre class="slide" id="19"><code class="go"><span class="type">r</span>, <span class="type">ok</span> := <span class="type">g</span>[*<span class="type">l</span>]
+
+if <span class="type">ok</span> {
+    fmt.Printf("%s\n", <span class="type">r</span>)
+} else {
+    fmt.Printf("The language you selected is not valid\n")
+}
+</code></pre>
+
+<pre class="slide" id="20"><code class="go"><span class="type">result</span>, <span class="type">keyExists?</span> := <span class="type">greeting</span>[*<span class="type">language</span>]
+
+if <span class="type">keyExists?</span> {
+    fmt.Printf("%s\n", <span class="type">result</span>)
+} else {
+    fmt.Printf("The language you selected is not valid\n")
+}
+</code></pre>
+
+<pre class="slide" id="21"><code class="txt">i            <span class="hljs-comment">index</span>
+c            <span class="hljs-comment">count or context</span>
+r, w         <span class="hljs-comment">reader, writer</span>
+req, res     <span class="hljs-comment">request, response</span>
+err          <span class="hljs-comment">error</span>
+buf          <span class="hljs-comment">buffer</span>
+f            <span class="hljs-comment">file</span>
+ok           <span class="hljs-comment">assertion result</span>
+</code></pre>
+</body>
+</html>

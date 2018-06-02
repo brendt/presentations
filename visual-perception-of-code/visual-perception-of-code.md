@@ -331,13 +331,13 @@ A lot of the things I'll talk about today are also written down there.
 
 ---
 
-![inline](./curly-1.png)
+![](./curly-1.png)
 
 ^ With scanning, and cognitive load in mind; can anybody tell me what could be wrong with this piece of code?
 
 ---
 
-![inline](./curly-2.png)
+![](./curly-2.png)
 
 ^ The argument list is the problem. There's a lot of important information there, pushed to the right.
 
@@ -347,7 +347,7 @@ A lot of the things I'll talk about today are also written down there.
 
 ---
 
-![inline](./curly-3.png)
+![](./curly-3.png)
 
 ^ One solution could be structuring the argument list like this, pulling the arguments more to the left.
 
@@ -355,7 +355,7 @@ A lot of the things I'll talk about today are also written down there.
 
 ---
 
-![inline](./curly-4.png)
+![](./curly-4.png)
 
 ^ For example making this constructor a static constructor instead.
 
@@ -363,7 +363,7 @@ A lot of the things I'll talk about today are also written down there.
 
 ---
 
-![inline](./curly-5.png)
+![](./curly-5.png)
 
 ^ Another approach could be something like this, but now you're introducing several points of focus in your code.
 
@@ -371,7 +371,7 @@ A lot of the things I'll talk about today are also written down there.
 
 ---
 
-![inline](./curly-6.png)
+![](./curly-6.png)
 
 ^ There's the function start and end, the first and third argument aligning with the method body, and the second and fourth don't align to anything.
 
@@ -379,7 +379,7 @@ A lot of the things I'll talk about today are also written down there.
 
 ---
 
-![inline](./curly-7.png)
+![](./curly-7.png)
 
 ^ Moving on to what seems like the only consistent, yet easy to understand way of structuring the arguments.
 
@@ -387,7 +387,7 @@ A lot of the things I'll talk about today are also written down there.
 
 ---
 
-![inline](./curly-8.png)
+![](./curly-8.png)
 
 ^ Can you see how difficult it is to spot where the argument list ends, and where the method body starts?
 
@@ -397,7 +397,7 @@ A lot of the things I'll talk about today are also written down there.
 
 ---
 
-![inline](./curly-9.png)
+![](./curly-9.png)
 
 ^ On a new line.
 
@@ -405,7 +405,7 @@ A lot of the things I'll talk about today are also written down there.
 
 ---
 
-![inline](./curly-10.png)
+![](./curly-10.png)
 
 ^ This is the end result. 
 
@@ -437,7 +437,7 @@ A lot of the things I'll talk about today are also written down there.
 
 ---
 
-![inline](./docblocks-1.png)
+![](./docblocks-1.png)
 
 ^ This function "puts a process into progress".
 
@@ -445,7 +445,7 @@ A lot of the things I'll talk about today are also written down there.
 
 ---
 
-![inline](./docblocks-3.png)
+![](./docblocks-2.png)
 
 ^ Nothing. It has no added value at all. 
 
@@ -463,41 +463,40 @@ A lot of the things I'll talk about today are also written down there.
 
 ---
 
-### Go naming[^4]
+## Go naming[^4]
 
-![inline](./names-go-1.png)
 
 [^4]: *https://speakerdeck.com/tpryan/go-for-php-developers*
 
 ^ At PHPBenelux this year, Terrence Ryan gave a talk called "Go for PHP developers" and he showed us this example.
 
+---
+
+![](./names-go-1.png)
+
 ^ He immediatly addressed a problem for the non-Go developers in the room: this code had very unclear names. So he changed it.
 
 ---
 
-### Go naming[^4]
-
-![inline](./names-go-2.png)
+![](./names-go-2.png)
 
 ^ Afterwards I asked him why there was this naming convention in Go to make all variables as short as possible. He said "that's just the way the core team does it, and they enforce it during code reviews at Google". So naturally, those conventions were also used by the community.
 
 ---
 
-### Variable Name Conventions in Go
-
-![inline](./names-go-3.png)
+![](./names-go-3.png)
 
 ^ Instead of choosing names which could be easily understood by humans, Go has this culture of making names as short as possible, without a good reason, besides "preference".
 
 ---
 
-![inline](./names-1.png)
+![](./names-1.png)
 
 ^ So what about our example? If a better name makes the code more readable, if it saves you a fraction of a second of brain time; and with cognitive load in mind; shouldn't we just use better names? Is there really an argument against it?
 
 ---
 
-![inline](./names-2.png)
+![](./names-2.png)
 
 ^ I personally don't think so.
 

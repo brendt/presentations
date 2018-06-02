@@ -1,0 +1,59 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+}
+
+* {
+}
+
+.slide {
+    background-color: #fff;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding: 10vh 10%;
+    height: 80vh;
+    position: relative;
+}
+
+.slide:after {
+    display: block;
+    clear: both;
+    content: ' ';
+}
+
+.slide > code {
+    flex: 1;
+    margin: 0;
+    display: block;
+    padding: 2em;
+    overflow: auto;
+    max-height: 80vh;
+    box-shadow: 0 30px 50px 0 rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    position: relative;
+}
+
+.line {
+    position: absolute;
+    border-right: 2px dashed red;
+    height: 100%;
+    top: 0;
+}
+
+.line1 {
+    left: 40px;
+}
+
+.line2 {
+    left: 85px;
+}
+
+.line3 {
+    left: 342px;
+}
+
+.line4 {
+    left: 355px;
+}

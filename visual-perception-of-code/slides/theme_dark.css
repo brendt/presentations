@@ -1,0 +1,121 @@
+.slide > code {
+    font-family: "Ubuntu Mono", Monaco, monospace;
+    font-size: 1.2em;
+    line-height: 1.8em;
+}
+
+.slide.bad-font > code {
+    font-family: "Courier New", monospace;
+    font-size: .8em;
+    line-height: 1.1em;
+}
+
+.dark .hljs {
+    display: block;
+    overflow-x: auto;
+    background: #1E1E1E;
+    color: #DCDCDC;
+}
+
+.dark .hljs-keyword,
+.dark .hljs-literal,
+.dark .hljs-symbol,
+.dark .hljs-name {
+    color: #569CD6;
+}
+.dark .hljs-link {
+    color: #569CD6;
+    text-decoration: underline;
+}
+
+.dark  .hljs-built_in,
+.dark  .hljs-type {
+    color: #4EC9B0;
+}
+
+.dark .hljs-number,
+.dark .hljs-class {
+    color: #B8D7A3;
+}
+
+.dark .hljs-string,
+.dark .hljs-meta-string {
+    color: #D69D85;
+}
+
+.dark .hljs-regexp,
+.dark .hljs-template-tag {
+    color: #9A5334;
+}
+
+.dark .hljs-subst,
+.dark .hljs-function,
+.dark .hljs-title,
+.dark .hljs-params,
+.dark .hljs-formula {
+    color: #DCDCDC;
+}
+
+.dark .hljs-comment,
+.dark .hljs-quote {
+    color: #57A64A;
+    font-style: italic;
+}
+
+.dark .hljs-doctag {
+    color: #608B4E;
+}
+
+.dark .hljs-meta,
+.dark .hljs-meta-keyword,
+.dark .hljs-tag {
+    color: #9B9B9B;
+}
+
+.dark .hljs-variable,
+.dark .hljs-template-variable {
+    color: #BD63C5;
+}
+
+.dark .hljs-attr,
+.dark .hljs-attribute,
+.dark .hljs-builtin-name {
+    color: #9CDCFE;
+}
+
+.dark .hljs-section {
+    color: gold;
+}
+
+.dark .hljs-emphasis {
+    font-style: italic;
+}
+
+.dark .hljs-strong {
+    font-weight: bold;
+}
+
+/*.dark .hljs-code {
+  font-family:'Monospace';
+}*/
+
+.dark .hljs-bullet,
+.dark .hljs-selector-tag,
+.dark .hljs-selector-id,
+.dark .hljs-selector-class,
+.dark .hljs-selector-attr,
+.dark .hljs-selector-pseudo {
+    color: #D7BA7D;
+}
+
+.dark .hljs-addition {
+    background-color: #144212;
+    display: inline-block;
+    width: 100%;
+}
+
+.dark .hljs-deletion {
+    background-color: #600;
+    display: inline-block;
+    width: 100%;
+}

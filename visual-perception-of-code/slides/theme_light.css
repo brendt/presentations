@@ -1,0 +1,107 @@
+.slide > code {
+    font-family: "Ubuntu Mono", Monaco, monospace;
+    font-size: 1.2em;
+    line-height: 1.8em;
+    background-color: #f8f8f8;
+}
+
+.hljs {
+    display: block;
+    overflow-x: auto;
+    color: #000;
+}
+
+.hljs-comment span,
+.hljs-comment,
+.hljs-quote {
+    color: #888888;
+    font-style: italic;
+}
+
+.hljs-meta,
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+    color: #0084FF;
+}
+
+.hljs-number {
+    color: #005FE7;
+}
+
+.type span,
+.type,
+.hljs-literal,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag .hljs-attr {
+    color: #FF00E0;
+}
+
+.hljs-string,
+.hljs-doctag {
+    color: #003DB1;
+}
+
+.method,
+.hljs-title,
+.hljs-section,
+.hljs-selector-id {
+    color: #008c00;
+}
+
+.hljs-subst {
+    font-weight: normal;
+}
+
+.hljs-type,
+.hljs-params + .hljs-title,
+.hljs-class .hljs-title {
+    color: #FF00E0;
+}
+
+
+.hljs-tag,
+.hljs-name,
+.hljs-attribute {
+    color: #000080;
+    font-weight: normal;
+}
+
+.function,
+.css .hljs-attribute,
+.language-css .hljs-attribute,
+.hljs-regexp,
+.hljs-link {
+    color: #009926;
+}
+
+.property {
+    color: #8C00E0;
+}
+
+.hljs-symbol,
+.hljs-bullet {
+    color: #990073;
+}
+
+.hljs-built_in,
+.hljs-builtin-name {
+    color: #FF00E0;
+}
+
+.hljs-deletion {
+    background: #fdd;
+}
+
+.hljs-addition {
+    background: #dfd;
+}
+
+.hljs-emphasis {
+    font-style: italic;
+}
+
+.hljs-strong {
+    font-weight: bold;
+}
