@@ -1,0 +1,92 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+}
+
+* {
+}
+
+.slide:after {
+    display: block;
+    clear: both;
+    content: ' ';
+}
+
+.slide {
+    z-index: 1;
+    background-color: #fff;
+    margin: 0;
+    padding: 10vh 10%;
+    height: 80vh;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.slide > code {
+    margin: 0;
+    display: block;
+    padding: 2em;
+    overflow: auto;
+    max-height: 80vh;
+    box-shadow: 0 30px 50px 0 rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    position: relative;
+    width:100%;
+}
+
+.slide > code + code {
+    margin-top: 3em;
+}
+
+.line {
+    position: absolute;
+    border-right: 2px dashed red;
+    height: 100%;
+    top: 0;
+}
+
+.line1 {
+    left: 40px;
+}
+
+.line2 {
+    left: 85px;
+}
+
+.line3 {
+    left: 344px;
+}
+
+.line4 {
+    left: 355px;
+}
+
+.actions {
+    position: relative;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, .1);
+    padding: 1em;
+    margin-bottom: -2em;
+    font-family: sans-serif;
+}
+
+.actions button {
+    margin-left: 1em;
+    background-color: #fff;
+    border: 1px solid #fff;
+    font-size: .8em;
+    cursor: pointer;
+    padding: .8em 1.7em .9em;
+    font-variant: all-petite-caps;
+    border-radius: 3px;
+}
+
+.actions button:hover {
+    background-color: #efefef;
+}

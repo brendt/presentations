@@ -1,31 +1,16 @@
 ---
 
-# Visual perception of code
-
-^ Before we start, just a quick introduction about me.
-
----
-
-## Brent:
-
-### Web developer at Spatie.
+### Brent
 ### @brendt_gd
 ### stitcher.io
 
-^ My name is Brent
-
-^ I'm a web developer at Spatie, I work on PHP and Laravel projects and do some open source.
-
-^ You can find me on Twitter
-
-^ I have a blog called stitcher.io on which I write about PHP and programming in general.
-A lot of the things I'll talk about today are also written down there.
+^ Let me quickly introduce myself: my name is Brent, I'm a backend developer, I work for a company called Spatie, here in Antwerp. You can find me on Twitter, and read my blog over at stitcher.io; and my talk today is called…
 
 ---
 
 # Visual perception of code
 
-^ Today's talk will be about visual perception of code. I'll argue that **how** your code **looks** will have an immense influence; not only on yourself, but also on your colleagues and friend-developers.
+^ … the visual perception of code. I'll argue that **how** your code **looks** will have an immense influence; not only on yourself, but also on your colleagues and friend-developers.
 
 ^ And to be honest, it is a difficult topic to talk about, for many reasons
 
@@ -118,7 +103,7 @@ A lot of the things I'll talk about today are also written down there.
 
 ^ During this talk, we'll mainly work with this piece of code. It's taken from a package I wrote at Spatie.
 
-^ Currently, the font configuration in this example is the following
+^ Currently, the font configuration is the following
 
 ---
 
@@ -281,7 +266,7 @@ A lot of the things I'll talk about today are also written down there.
 
 ^ I would really encourage you to just try it out for a week, I got used to a light theme in a few days, and since than never wanted to go back.
 
-^ It's of course a little personal, I understand that; but remember: easier to read text, reduced cognitive load.
+^ It's of course a little personal, I understand that; but remember: easier to read text, reduces cognitive load.
 
 ^ To recap:
 
@@ -443,7 +428,9 @@ A lot of the things I'll talk about today are also written down there.
 
 ## Naming
 
-^ You also have to name things correctly. A name is such a powerful tool, it can carry a lot of meaning and business context that you'd otherwise need documentation for.
+^ You also have to name things correctly. 
+
+^ A name is such a powerful tool, it can carry a lot of meaning and business context that you'd otherwise need documentation for.
 
 ^ Before making the last changes to our example code, let me quickly tell you a story.
 
@@ -454,7 +441,7 @@ A lot of the things I'll talk about today are also written down there.
 
 [^4]: *https://speakerdeck.com/tpryan/go-for-php-developers*
 
-^ At PHPBenelux this year, Terrence Ryan gave a talk called "Go for PHP developers" and he showed us this example.
+^ At PHPBenelux 2018, Terrence Ryan gave a talk called "Go for PHP developers" and he showed us this example.
 
 ---
 
@@ -470,9 +457,19 @@ A lot of the things I'll talk about today are also written down there.
 
 ---
 
+![center](./names-go-2.png)
+
+## An old practice
+
+^ The real reason behind short names has of course an origin: small terminals, screens, 40 years ago. 
+
+^ But luckily for us, we're not writing on those screens anymore, technology has evolved past that.
+
+---
+
 ![](./names-go-3.png)
 
-^ Instead of choosing names which could be easily understood by humans, Go has this culture of making names as short as possible, without a good reason, besides "preference".
+^ But still, instead of choosing names which can be easily understood by humans, Go has this culture of making names as short as possible, without a good reason, besides "preference".
 
 ---
 
@@ -571,6 +568,6 @@ A lot of the things I'll talk about today are also written down there.
 
 ^ With that being said, thanks for your attention!
 
-^ If there are any questions or if you want to tell me I'm wrong: feel free to come talk with me, after my colleague Sebestian is done.
+^ If there are any questions or if you want to tell me I'm wrong: feel free to come talk to me, I'm here the whole day and tomorrow.
 
 ---

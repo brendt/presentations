@@ -1,10 +1,11 @@
 <html>
 <head>
     <title>Slides</title>
-    <link rel="stylesheet" href="/visual-perception-of-code/slides/theme_light.css">
-    <link rel="stylesheet" href="/visual-perception-of-code/slides/theme_dark.css">
-    <link rel="stylesheet" href="/visual-perception-of-code/slides/slides.css">
-    <script src="/visual-perception-of-code/slides/hljs.min.js"></script>
+    <link rel="stylesheet" href="/slides/theme_light.css">
+    <link rel="stylesheet" href="/slides/theme_dark.css">
+    <link rel="stylesheet" href="/slides/slides.css">
+    <script src="/slides/hljs.min.js"></script>
+    <script src="/slides/html2canvas.min.js"></script>
 </head>
 <body>
 
@@ -309,5 +310,62 @@ buf          <span class="hljs-comment">buffer</span>
 f            <span class="hljs-comment">file</span>
 ok           <span class="hljs-comment">assertion result</span>
 </code></pre>
+
+<pre class="slide" id="22">
+    <code class="md">![File colours](<span class="argument">/img/tree-filter.png</span>)</code>
+    <code class="html">&lt;img
+    src=<span class="argument">"/img/tree-filter.png"</span>
+    srcset=<span class="argument">"
+        /img/tree-filter-466x248.png 466w,
+        /img/tree-filter-1044x556.png 1044w,
+        /img/tree-filter-933x496.png 933w,
+        /img/tree-filter-808x430.png 808w,
+        /img/tree-filter-660x351.png 660w"</span>
+    alt=<span class="argument">"File colours"</span>&gt;
+</code>
+</pre>
+
+<pre class="slide" id="23">
+    <code class="php">/**
+ * @mixin \App\Domain\User\Models\User
+ */
+class UserResource extends JsonResource
+{
+    public function toArray($request)
+    {
+        return [
+            'email' => $this->email,
+            'name' => $this->name,
+        ];
+    }
+}
+    </code>
+</pre>
+
+<pre class="slide" id="24">
+    <code class="php">&lt;?php
+
+namespace Illuminate\Http;
+
+/**
+ * @method array validate(array $data)
+ */
+class Request extends SymfonyRequest implements Arrayable, ArrayAccess
+    </code>
+</pre>
+
+<pre class="slide" id="25">
+    <code class="php">switch ($foo) with === {
+
+strict switch ($a) {
+
+switch ($foo) use (===) {
+
+case === FOO:
+</code>
+</pre>
+
+<script src="/slides/app.js"></script>
+
 </body>
 </html>

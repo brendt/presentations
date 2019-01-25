@@ -18,6 +18,7 @@
     font-style: italic;
 }
 
+.html .hljs-name,
 .hljs-meta,
 .hljs-keyword,
 .hljs-selector-tag,
@@ -68,6 +69,12 @@
     font-weight: normal;
 }
 
+
+.argument span,
+.argument {
+    color: #00C000
+}
+
 .function,
 .css .hljs-attribute,
 .language-css .hljs-attribute,
@@ -76,8 +83,13 @@
     color: #009926;
 }
 
+
 .property {
     color: #8C00E0;
+}
+
+.html .hljs-attr {
+    color:#A200FF;
 }
 
 .hljs-symbol,
