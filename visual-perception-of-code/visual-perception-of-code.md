@@ -1,4 +1,10 @@
+footer: @brendt_gd — stitcher.io
+
+[.footer: ]
+
 ---
+
+[.footer: ]
 
 ### Brent
 ### @brendt_gd
@@ -99,6 +105,8 @@
 
 ---
 
+[.footer: ]
+
 ![-](./aestetics-1.png)
 
 ^ During this talk, we'll mainly work with this piece of code. It's taken from a package I wrote at Spatie.
@@ -106,6 +114,8 @@
 ^ Currently, the font configuration is the following
 
 ---
+
+[.footer: ]
 
 ![1](./aestetics-1.png)
 
@@ -119,11 +129,15 @@
 
 ---
 
+[.footer: ]
+
 ![-](./aestetics-1.png)
 
 ^ Now I'm going to propose another font configuration.
 
 ---
+
+[.footer: ]
 
 ![-](./aestetics-2.png)
 
@@ -134,6 +148,8 @@
 ^ If you're interested in this particular font configuration, this is it.
 
 ---
+
+[.footer: ]
 
 ![-](./aestetics-2.png)
 
@@ -148,6 +164,8 @@
 ^ But notice especially how much larger the font size and line height are.
 
 ---
+
+[.footer: ]
 
 ![-](./aestetics-2.png)
 
@@ -304,7 +322,7 @@
 
 ![](./curly-1.png)
 
-^ With scanning, and cognitive load in mind; can anybody tell me what could be wrong with this piece of code?
+^ With scanning, and cognitive load in mind; you can probably already tell could be wrong with this piece of code.
 
 ---
 
@@ -392,7 +410,7 @@
 
 ## Visual Patterns
 
-^ When you start focussing on visual patterns in your code, you'll discover that you're already using some. This is one of the most important reasons there's a style guide provided by the FIG: PSR-2 (PSR-12 is coming). 
+^ When you start focussing on visual patterns in your code, you'll discover that you're already using some. This is one of the most important reasons there's a style guide provided by the FIG: PSR-2 abd PSR-12
 
 ^ But, most likely, there still are some places in your code where you don't activily look for patterns. And those are the places which take the longest time to search for specific things. So try to think about that the next time you're coding.
 
@@ -535,6 +553,48 @@
 
 ---
 
+## What about namespaces?
+
+^ If you're thinking along, you might think of namespaces as a solution, instead of longer names. There's two problems with that solution though.
+
+---
+
+![](./namespaces-1.png)
+
+^ First there's the issue of naming conflicts. Here's one obvious example taken from Laravel. And mind you: these are actually community-accepted standards.
+
+^ Here we have a model and a resource — a resource is a class that transforms models to JSON responses for APIs
+
+^ These two classes are _very often_ used within the same context, so you almost _always_ have to import one with an alias.
+
+---
+
+![](./namespaces-2.png)
+
+^ That's lots of work and overhead, when using proper names would solve this issue alltogether. For example we could call the user resource class `UserResource`, and be done with it.
+
+---
+
+![](./namespaces-3.png)
+
+---
+
+![](./namespaces-4.png)
+
+^ The other problem with namespaces is that they only make clear what class you're actually dealing with at the top of your file, as a `use` statement.
+
+^ Can you tell from this example whether we're dealing with a user model or a user resource?
+
+---
+
+![](./namespaces-5.png)
+
+^ You'll have to scroll to the top, or inspect the variable with your IDE to know. Again that's lots of overhead.
+
+^ All of this to say that namespaces aren't the solution, we still need to use proper names.
+
+---
+
 ## Structure
 
 ### Curly brackets
@@ -571,3 +631,5 @@
 ^ If there are any questions or if you want to tell me I'm wrong: feel free to come talk to me, I'm here the whole day and tomorrow.
 
 ---
+
+[.footer: ]
