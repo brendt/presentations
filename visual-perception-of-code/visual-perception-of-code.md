@@ -7,16 +7,23 @@ footer: @brendt_gd — stitcher.io
 [.footer: ]
 
 ### Brent
-### @brendt_gd
 ### stitcher.io
+### Laravel beyod CRUD
+### @brendt_gd
 
-^ Let me quickly introduce myself: my name is Brent, I'm a backend developer, I work for a company called Spatie, here in Antwerp. You can find me on Twitter, and read my blog over at stitcher.io; and my talk today is called…
+^ Let me quickly introduce myself: my name is Brent, I'm a backend developer; I work for a company called Spatie, here in Antwerp, where I mainly work on Laravel projects and a significant amount of open source packages. 
+
+^ I'm also a blogger, my blog is called stitcher.io; and I'm a little bit of what some might call "an author", since I'm writing a book on how Laravel projects can be improved by applying DDD princinples on them, instead of following the "best" practices provided by the Laravel community. You can already read it today, again on my blog, it's called "Laravel beyond CRUD".
+
+^ Finally, you can find me on Twitter, so if you have any question that you don't want to ask face-to-face, you can reach me over there.
+
+^ so …
 
 ---
 
 # Visual perception of code
 
-^ … the visual perception of code. I'll argue that **how** your code **looks** will have an immense influence; not only on yourself, but also on your colleagues and friend-developers.
+^ … the visual perception of code. Today I'll argue that **how** your code **looks** will have an immense influence; not only on yourself, but also on your colleagues and friend-developers.
 
 ^ And to be honest, it is a difficult topic to talk about, for many reasons
 
