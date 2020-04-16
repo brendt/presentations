@@ -4,14 +4,18 @@ footer: @brendt_gd — stitcher.io
 
 ---
 
+# 👋
+
+---
+
 [.footer: ]
 
 ### Brent
 ### stitcher.io
-### Laravel beyod CRUD
+### Laravel beyond CRUD
 ### @brendt_gd
 
-^ Let me quickly introduce myself: my name is Brent, I'm a backend developer; I work for a company called Spatie, here in Antwerp, where I mainly work on Laravel projects and a significant amount of open source packages. 
+^ Let me quickly introduce myself: my name is Brent, I'm a backend developer; I work for a company called Spatie, here in Antwerp, and I mainly work on Laravel projects and a significant amount of open source packages. 
 
 ^ I'm also a blogger, my blog is called stitcher.io; and I'm a little bit of what some might call "an author", since I'm writing a book on how Laravel projects can be improved by applying DDD princinples on them, instead of following the "best" practices provided by the Laravel community. You can already read it today, again on my blog, it's called "Laravel beyond CRUD".
 
@@ -182,15 +186,15 @@ footer: @brendt_gd — stitcher.io
 
 ---
 
-## More space = ?
+## Smaller fonts = ?
 
-^ What's the value of having more space?
+^ What's the value of having a smaller font?
 
 ---
 
-## More space = more things to see
+## Smaller fonts = more things to see
 
-^ You could say there's more things to see.
+^ You could say there's more things to see at once.
 
 ^ But in reality, being able to **see** more code on your screen, doesn't mean you're able to understand what's on that screen any faster or better. It's actually more difficult to know where to focus, because there's much more points to focus on.
 
@@ -329,7 +333,7 @@ footer: @brendt_gd — stitcher.io
 
 ![](./curly-1.png)
 
-^ With scanning, and cognitive load in mind; you can probably already tell could be wrong with this piece of code.
+^ With scanning, and cognitive load in mind; you can probably already tell what's wrong with this piece of code.
 
 ---
 
